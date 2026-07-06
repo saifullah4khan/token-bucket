@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "token-bucket-limiter"
+version = "0.1.0"
+description = "A small, dependency-free token-bucket rate limiter for staying under third-party API limits."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Saifullah Khan", email = "saifullah4khan@gmail.com" }]
+keywords = ["rate-limiting", "token-bucket", "throttle", "api", "reliability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/saifullah4khan/token-bucket"
+Issues = "https://github.com/saifullah4khan/token-bucket/issues"
+
+[tool.setuptools]
+packages = ["token_bucket"]
